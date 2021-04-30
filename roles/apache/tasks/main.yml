@@ -7,6 +7,7 @@
     update_cache: yes
 
 - name: "install index page"
+  become: true
   copy:
     src: index.html
     dest: /var/www/html/index.html
