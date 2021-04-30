@@ -1,6 +1,8 @@
 ---
-- name: Exercise #1
-  hosts: localhost
+- name: Run Apache Server
+  hosts: udacity
+  user: ubuntu
 
   roles:
-    - print
+    - prepare
+    - apache
